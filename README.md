@@ -1,4 +1,3 @@
-[proyecto.py](https://github.com/user-attachments/files/22052575/proyecto.py)
 # Proyecto-1-Programaci-n
 Una liga de fútbol de Querétaro quiere empezar a hacer sus registros de los equipos y sus partidos de forma digital ya que hacerlo de forma de forma manual conlleva mucho esfuerzo y es más propenso a errores. Para esto ocupan un programa que pueda guardar el nombre de los equipos y que aparte lleve el conteo de los partidos jugados, los partidos ganados, los perdidos y que en base a ello de una puntuación y con esta muestre el ranking de estos equipos durante la temporada.
 
