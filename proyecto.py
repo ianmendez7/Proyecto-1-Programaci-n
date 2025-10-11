@@ -14,6 +14,18 @@ gana_pierde_7=0
 contador_7=0
 gana_pierde_8=0
 contador_8=0
+
+equipo_1=input("Dime el nombre del primer equipo ")
+equipo_2=input("Dime el nombre del segundo equipo ")
+equipo_3=input("Dime el nombre del tercer equipo ")
+equipo_4=input("Dime el nombre del cuarto equipo ")
+equipo_5=input("Dime el nombre del quinto equipo ")
+equipo_6=input("Dime el nombre del sexto equipo ")
+equipo_7=input("Dime el nombre del séptimo equipo ")
+equipo_8=input("Dime el nombre del octavo equipo ")
+
+equipos=[equipo_1,equipo_2,equipo_3,equipo_4,equipo_5,equipo_6,equipo_7,equipo_8]
+
 def puntos_1(gana_pierde_1,contador_1):
     gana_pierde_1=int(input(print("gano= 1, empato=2 o perdio=3: ")))
     if gana_pierde_1==1:
@@ -73,6 +85,7 @@ def puntos_5(gana_pierde_5,contador_5):
     else:
         contador_5=contador_5+0
         return contador_5
+    
 def puntos_6(gana_pierde_6,contador_6):
     gana_pierde_6=int(input(print("gano= 1, empato=2 o perdio=3: ")))
     if gana_pierde_6==1:
@@ -98,7 +111,7 @@ def puntos_7(gana_pierde_7,contador_7):
         return contador_7
     
 def puntos_8(gana_pierde_8,contador_8):
-    gana_pierde_8=(input(print("gano= 1, empato=2 o perdio=3: ")))
+    gana_pierde_8=int((input(print("gano= 1, empato=2 o perdio=3: "))))
     if gana_pierde_8==1:
         contador_8= contador_8 + 3
         return contador_8
@@ -109,32 +122,40 @@ def puntos_8(gana_pierde_8,contador_8):
         contador_8=contador_8+0
         return contador_8     
 
-equipo=int(input(print("Introduce número de equipo")))
-while equipo!=9:
-    if equipo==1:
+equipo=input(print("Introduce nombre de equipo, cuando quieras finalizar escribe: 1"))
+while equipo!=equipos:
+    if equipo==equipo_1:
         contador_1=puntos_1(gana_pierde_1,contador_1)
-        print("Ese equipo tiene",contador_1,"puntos")
-    elif equipo==2:
+        print("El equipo",equipo_1,"tiene",contador_1,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_2:
         contador_2=puntos_2(gana_pierde_2,contador_2)
-        print("Ese equipo tiene",contador_2,"puntos")
-    elif equipo==3:
+        print("El equipo",equipo_2,"tiene",contador_2,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_3:
         contador_3=puntos_3(gana_pierde_3,contador_3)
-        print("Ese equipo tiene",contador_3,"puntos")
-    elif equipo==4:
+        print("El equipo",equipo_3,"tiene",contador_3,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_4:
         contador_4=puntos_4(gana_pierde_4,contador_4)
-        print("Ese equipo tiene",contador_4,"puntos")
-    elif equipo==5:
+        print("El equipo",equipo_4,"tiene",contador_4,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_5:
         contador_5=puntos_5(gana_pierde_5,contador_5)
-        print("Ese equipo tiene",contador_5,"puntos")
-    elif equipo==6:
+        print("El equipo",equipo_5,"tiene",contador_5,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_6:
         contador_6=puntos_6(gana_pierde_6,contador_6)
-        print("Ese equipo tiene",contador_6,"puntos")
-    elif equipo==7:
+        print("El equipo",equipo_6,"tiene",contador_6,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_7:
         contador_7=puntos_7(gana_pierde_7,contador_7)
-        print("Ese equipo tiene",contador_7,"puntos")
-    elif equipo==8:
+        print("El equipo",equipo_7,"tiene",contador_7,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+    elif equipo==equipo_8:
         contador_8=puntos_8(gana_pierde_8,contador_8)
-        print("Ese equipo tiene",contador_8,"puntos")
-    else:
-       print("Eso es todo") 
+        print("El equipo",equipo_8,"tiene",contador_8,"puntos")
+        equipo=input(print("Si quieres seguir con este equipo escribe su nombre, en caso de que no, escribe el nombre del equipo al que quieras seguir"))
+
     
+   
