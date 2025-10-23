@@ -6,7 +6,9 @@ Este programa va a ser una serie de preguntas para para determinar que equipos p
 # Instrucciones
 Descargar el archivo y correr en terminal con:
 
-markdown python proyecto.py
+```
+python pisa.py
+```
 
 o abrir en Thonny y dar boton de play. 
 
